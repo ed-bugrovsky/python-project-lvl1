@@ -5,12 +5,11 @@ import random
 
 def progression():
     step = random.randint(1, 10)
-    start = random.randint(1, 100)
-    digits = random.randint(5, 15)
+    number = random.randint(1, 100)
     case = list()
-    for i in range(digits):
-        case.append(str(start))
-        start += step
+    for i in range(random.randint(5, 15)):
+        case.append(str(number))
+        number += step
     missing = random.randint(1, len(case) - 2)
     answer = case[missing]
     case[missing] = '..'
